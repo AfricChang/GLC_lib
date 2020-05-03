@@ -906,7 +906,7 @@ GLC_StructReference* GLC_3dxmlToWorld::createReferenceRep(QString repId, GLC_3DR
 		}
 		checkForXmlError("Element ReferenceRep contains error");
 
-		/*const*/ QString format(readAttribute("format", true));
+		QString format(readAttribute("format", true));
 		if (format.isEmpty())
 		{
 			goToElement(m_pStreamReader, "RepFormat");
